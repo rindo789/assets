@@ -14,6 +14,7 @@ import InputImage from "@hubleto/react-ui/core/Inputs/Image";
 import InputBoolean from "@hubleto/react-ui/core/Inputs/Boolean";
 import InputColor from "@hubleto/react-ui/core/Inputs/Color";
 import InputHyperlink from "@hubleto/react-ui/core/Inputs/Hyperlink";
+import InputUserSelect from "@hubleto/react-ui/core/Inputs/UserSelect";
 import InputWysiwyg from "@hubleto/react-ui/core/Inputs/Wysiwyg";
 
 import TableCellRendererHyperlink from "@hubleto/react-ui/core/TableCellRenderers/Hyperlink";
@@ -53,6 +54,7 @@ class HubletoErp extends HubletoReactUi {
     this.registerReactComponent('InputImage', InputImage);
     this.registerReactComponent('InputColor', InputColor);
     this.registerReactComponent('InputHyperlink', InputHyperlink);
+    this.registerReactComponent('InputUserSelect', InputUserSelect);
     this.registerReactComponent('InputWysiwyg', InputWysiwyg);
 
     this.registerReactComponent('TableCellRendererHyperlink', TableCellRendererHyperlink);
