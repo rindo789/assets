@@ -80,8 +80,11 @@
 
   .fc .fc-toolbar-title { @apply !text-base; }
 
-  .sidebar-group .sidebar-group-btns { @apply hidden border border-primary/20 rounded relative p-1 my-2 bg-white shadow border-blue-600 ; }
+  .sidebar-group .sidebar-group-title { @apply text-primary text-xs p-1 mt-1 text-center bg-gray-50; }
+  .sidebar-group .sidebar-group-btns { @apply relative pl-0 bg-white; }
   .sidebar-group.activated > .btn { @apply bg-primary/20; }
   .sidebar-group.activated .sidebar-group-btns { @apply block; }
+  .sidebar-group .sidebar-group-btns .btn .icon { @apply text-sm; }
+  .sidebar-group .sidebar-group-btns .btn .text { @apply text-sm; }
   
 }
