@@ -83,11 +83,8 @@ class HubletoErp extends HubletoReactUi {
 
     if (this.dictionary === null) return orig;
 
-
-    const contextOrig = context;
-
     //@ts-ignore
-    context = context.replaceAll('\\', '-').toLowerCase();
+    context = (context ?? '').replaceAll('\\', '-').toLowerCase();
 
     if (
       this.dictionary[context]
@@ -105,7 +102,7 @@ class HubletoErp extends HubletoReactUi {
     //   translated = this.dictionary[context][orig] ?? '';
     // }
 
-    if (translated == '') translated = context + ',' + contextInner + '#' + orig;
+    if (translated == '') translated = '**' + orig + '**';
 
     return translated;
   }
