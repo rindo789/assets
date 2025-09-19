@@ -83,6 +83,9 @@ class HubletoErp extends HubletoReactUi {
 
     if (this.dictionary === null) return orig;
 
+
+    const contextOrig = context;
+
     //@ts-ignore
     context = context.replaceAll('\\', '-').toLowerCase();
 
