@@ -81,6 +81,7 @@ class HubletoErp extends HubletoReactUi {
   translate(orig: string, context?: string, contextInner?: string): string {
     let translated: string = orig;
 
+    if (this.language === 'en') return orig;
     if (this.dictionary === null) return orig;
 
     //@ts-ignore
