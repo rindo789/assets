@@ -50,13 +50,15 @@
 
   .app-launcher-show-btn { @apply cursor-pointer border border-primary text-primary m-1 p-1 flex items-center gap-2 justify-center rounded hover:bg-primary hover:text-white; }
 
-  aside#default-sidebar > nav { @apply w-48 !bg-white; }
-  aside#default-sidebar > nav .btn { @apply hover:bg-primary/10 pl-1; }
-  aside#default-sidebar > nav .btn .icon { @apply text-gray-800; }
-  aside#default-sidebar > nav .btn .text { @apply text-gray-800; }
-  aside#default-sidebar > nav .btn.btn-active { @apply bg-primary; }
-  aside#default-sidebar > nav .btn.btn-active .icon { @apply text-white; }
-  aside#default-sidebar > nav .btn.btn-active .text { @apply text-white; }
+  aside#default-sidebar nav { @apply w-48 !bg-white; }
+  aside#default-sidebar .nav-inner { @apply w-48 !bg-white overflow-y-auto; }
+  aside#default-sidebar .btn { @apply hover:bg-primary/10 pl-1; }
+  aside#default-sidebar .btn .icon { @apply text-gray-800; }
+  aside#default-sidebar .btn .text { @apply text-gray-800; }
+  aside#default-sidebar .btn.btn-active { @apply bg-primary; }
+  aside#default-sidebar .btn.btn-active .icon { @apply text-white; }
+  aside#default-sidebar .btn.btn-active .text { @apply text-white; }
+  aside#default-sidebar .nav-release-info { @apply text-sm p-1 text-gray-400; }
   div#app-main-content { @apply md:ml-48; }
 
   #app-launcher { @apply hidden fixed w-full h-full bg-white/90; z-index: 10000; top: 0; left: 0; overflow: auto; }

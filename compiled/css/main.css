@@ -1673,6 +1673,9 @@
   .\!bg-gray-700 {
     background-color: var(--color-gray-700) !important;
   }
+  .\!bg-white {
+    background-color: var(--color-white) !important;
+  }
   .bg-amber-600 {
     background-color: var(--color-amber-600);
   }
@@ -4615,11 +4618,11 @@
     top: calc(var(--spacing) * 0);
     left: calc(var(--spacing) * 0);
     z-index: 10;
-    margin-top: calc(var(--spacing) * 12);
     display: flex;
     height: 100%;
     --tw-translate-x: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
+    padding-top: calc(var(--spacing) * 12);
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -15490,11 +15493,16 @@ body.ajax-loading #logo {
       }
     }
   }
-  aside#default-sidebar > nav {
+  aside#default-sidebar nav {
     width: calc(var(--spacing) * 48);
     background-color: var(--color-white) !important;
   }
-  aside#default-sidebar > nav .btn {
+  aside#default-sidebar .nav-inner {
+    width: calc(var(--spacing) * 48);
+    overflow-y: auto;
+    background-color: var(--color-white) !important;
+  }
+  aside#default-sidebar .btn {
     padding-left: calc(var(--spacing) * 1);
     &:hover {
       @media (hover: hover) {
@@ -15505,20 +15513,26 @@ body.ajax-loading #logo {
       }
     }
   }
-  aside#default-sidebar > nav .btn .icon {
+  aside#default-sidebar .btn .icon {
     color: var(--color-gray-800);
   }
-  aside#default-sidebar > nav .btn .text {
+  aside#default-sidebar .btn .text {
     color: var(--color-gray-800);
   }
-  aside#default-sidebar > nav .btn.btn-active {
+  aside#default-sidebar .btn.btn-active {
     background-color: var(--color-primary);
   }
-  aside#default-sidebar > nav .btn.btn-active .icon {
+  aside#default-sidebar .btn.btn-active .icon {
     color: var(--color-white);
   }
-  aside#default-sidebar > nav .btn.btn-active .text {
+  aside#default-sidebar .btn.btn-active .text {
     color: var(--color-white);
+  }
+  aside#default-sidebar .nav-release-info {
+    padding: calc(var(--spacing) * 1);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    color: var(--color-gray-400);
   }
   div#app-main-content {
     @media (width >= 48rem) {
