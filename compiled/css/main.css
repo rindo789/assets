@@ -4975,15 +4975,6 @@ body.ajax-loading #logo {
   .hubleto.component.table .table-header-search.active {
     background-color: var(--color-yellow-50);
   }
-  .hubleto.component.table .table-body {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-    border-color: var(--color-slate-200);
-    &:where(.dark, .dark *) {
-      --tw-border-style: none;
-      border-style: none;
-    }
-  }
   .hubleto.component.table .table-body tr {
     :where(& > :not(:last-child)) {
       --tw-divide-x-reverse: 0;
@@ -5210,6 +5201,11 @@ body.ajax-loading #logo {
 @layer hubleto-framework {
   .p-progressbar .p-progressbar-value {
     background-color: var(--color-primary);
+  }
+  .p-datatable {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: var(--color-slate-200);
   }
   .p-datatable .p-datatable-tbody > tr > td {
     border-color: var(--color-gray-50);

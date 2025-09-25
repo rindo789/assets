@@ -10,7 +10,7 @@
   .hubleto.component.table .table-header-right { @apply flex flex-1 text-center gap-1 justify-end; }
   .hubleto.component.table .table-header-search { @apply flex flex-4 gap-2 w-full p-1 border-slate-200 rounded-none dark:border-slate-600 dark:bg-slate-950; }
   .hubleto.component.table .table-header-search.active { @apply bg-yellow-50; }
-  .hubleto.component.table .table-body { @apply border border-slate-200 dark:border-none; }
+  /* .hubleto.component.table .table-body { @apply border border-slate-200 dark:border-none; } */
   .hubleto.component.table .table-body tr { @apply border border-transparent divide-x hover:bg-gray-100; box-sizing: border-box; }
   .hubleto.component.table .table-body tr:hover td { @apply bg-gray-100 dark:bg-slate-800; }
   .hubleto.component.table .table-body thead th td { @apply p-0.5; margin: 1px; }
