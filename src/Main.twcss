@@ -45,7 +45,7 @@
   /* add your custom css here */
   #app-main-content { @apply ml-0 p-2 md:ml-36; }
   #app-main-content.sidebar-two-levels { @apply ml-0 md:ml-96; }
-  #app-main-content > h1, h1.app-main-title { @apply flex justify-between w-full p-0 pb-2 m-0 border-b border-b-primary/20 mb-2 text-primary dark:text-white; }
+  #app-main-content > h1, h1.app-main-title { @apply flex justify-between w-full p-0 pb-2 m-0 border-b border-b-gray-100 mb-2 text-primary dark:text-white; }
   h1.app-main-title .app-main-title-buttons { @apply text-base }
 
   .app-launcher-show-btn { @apply cursor-pointer border border-primary text-primary m-1 p-1 flex items-center gap-2 justify-center rounded hover:bg-primary hover:text-white; }
@@ -58,7 +58,7 @@
   aside#default-sidebar .btn.btn-active { @apply bg-primary; }
   aside#default-sidebar .btn.btn-active .icon { @apply text-white; }
   aside#default-sidebar .btn.btn-active .text { @apply text-white; }
-  aside#default-sidebar .nav-release-info { @apply text-sm p-1 text-gray-400; }
+  aside#default-sidebar .nav-release-info { @apply text-sm p-1 text-gray-400 border-t border-t-gray-100; }
   div#app-main-content { @apply md:ml-48; }
 
   #app-launcher { @apply hidden fixed w-full h-full bg-white/90; z-index: 10000; top: 0; left: 0; overflow: auto; }
