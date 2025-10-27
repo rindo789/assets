@@ -63,7 +63,12 @@
   .hubleto.component.input .input-after { @apply flex-1 ml-2; }
   .hubleto.component.input .input-unit { @apply flex-1 ml-2; }
 
-  .is-invalid {
+  .is-invalid, .hubleto.component.input.invalid {
     @apply !border-red-500 text-red-500;
+  }
+
+  .is-invalid .hubleto-lookup > div:nth-of-type(1),
+  .hubleto.component.input.invalid .hubleto-lookup > div:nth-of-type(1) {
+    @apply !border-red-500;
   }
 }
