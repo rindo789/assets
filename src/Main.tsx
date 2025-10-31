@@ -33,6 +33,7 @@ import { Tooltip } from "primereact/tooltip";
 class HubletoErp extends HubletoReactUi {
   language: string = 'en';
   idUser: number = 0;
+  userEmail: string = '';
   isPremium: boolean = false;
   user: any;
   apps: any = {};
@@ -42,6 +43,7 @@ class HubletoErp extends HubletoReactUi {
     super(config);
 
     this.idUser = config['idUser'];
+    this.userEmail = config['userEmail'];
     this.isPremium = config['isPremium'];
     this.language = config['language'];
     this.dictionary = globalThis.dictionary;
