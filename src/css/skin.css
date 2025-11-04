@@ -182,7 +182,9 @@
   .form .form-body .form-top-menu { @apply flex gap-2 p-2 mb-2 border-b border-b-gray-700; }
   .form .form-footer { @apply p-2 border-t border-t-slate-200 bg-gray-50; }
 
-  .input-wrapper { @apply relative justify-between items-center border border-transparent rounded-sm p-1 hover:bg-gray-50 dark:hover:bg-white/10; box-sizing: border-box; }
+  .input-icon { @apply text-lg min-w-8; }
+
+  .input-wrapper { @apply grow relative justify-between items-center border border-transparent rounded-sm p-1 hover:bg-gray-50 dark:hover:bg-white/10; box-sizing: border-box; }
   .input-wrapper .input-label { @apply block text-sm text-gray-400; }
   .input-wrapper.modified .input-label { @apply text-yellow-600; }
   .input-wrapper.required { @apply before:absolute before:content-['*'] before:text-red-600; }
