@@ -87,7 +87,9 @@
   .sidebar-group.activated > .btn { @apply bg-primary/20; }
   .sidebar-group.activated .sidebar-group-btns { @apply block; }
   .sidebar-group .sidebar-group-btns .btn { @apply ml-1; }
-  .sidebar-group .sidebar-group-btns .btn .icon { @apply p-0.5 text-sm; }
-  .sidebar-group .sidebar-group-btns .btn .text { @apply p-0.5 text-sm; }
+  .sidebar-group .sidebar-group-btns .btn .icon { @apply p-0.5 text-xs mr-1 !text-slate-700; }
+  .sidebar-group .sidebar-group-btns .btn .text { @apply p-0.5 text-sm !text-slate-700; }
+  .sidebar-group .sidebar-group-btns .btn.btn-active .icon { @apply !text-white; }
+  .sidebar-group .sidebar-group-btns .btn.btn-active .text { @apply !text-white; }
   
 }
