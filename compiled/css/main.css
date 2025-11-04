@@ -1932,6 +1932,9 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
+  .p-0\.5 {
+    padding: calc(var(--spacing) * 0.5);
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -2072,6 +2075,9 @@
   }
   .pl-0 {
     padding-left: calc(var(--spacing) * 0);
+  }
+  .pl-1 {
+    padding-left: calc(var(--spacing) * 1);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
@@ -15830,22 +15836,39 @@ body.ajax-loading #logo {
     line-height: var(--tw-leading, var(--text-base--line-height)) !important;
   }
   .sidebar-group .sidebar-group-title {
-    margin-top: calc(var(--spacing) * 1);
-    background-color: var(--color-gray-50);
-    padding: calc(var(--spacing) * 1);
-    text-align: center;
+    display: block;
+    width: 100%;
+    padding: calc(var(--spacing) * 0.5);
+    padding-left: calc(var(--spacing) * 1);
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
-    color: var(--color-primary);
-    &:where(.dark, .dark *) {
-      border-bottom-style: var(--tw-border-style);
-      border-bottom-width: 1px;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-50);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: none;
+      }
     }
     &:where(.dark, .dark *) {
-      border-bottom-color: var(--color-slate-700);
+      background-color: var(--color-gray-800);
     }
     &:where(.dark, .dark *) {
       background-color: var(--color-gray-900);
+    }
+    &:where(.dark, .dark *) {
+      color: var(--color-white);
+    }
+    &:hover {
+      @media (hover: hover) {
+        &:where(.dark, .dark *) {
+          background-color: var(--color-gray-700);
+        }
+      }
     }
   }
   .sidebar-group .sidebar-group-btns {
@@ -15872,11 +15895,16 @@ body.ajax-loading #logo {
   .sidebar-group.activated .sidebar-group-btns {
     display: block;
   }
+  .sidebar-group .sidebar-group-btns .btn {
+    margin-left: calc(var(--spacing) * 1);
+  }
   .sidebar-group .sidebar-group-btns .btn .icon {
+    padding: calc(var(--spacing) * 0.5);
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .sidebar-group .sidebar-group-btns .btn .text {
+    padding: calc(var(--spacing) * 0.5);
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
